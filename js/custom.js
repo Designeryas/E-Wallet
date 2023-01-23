@@ -13,3 +13,7 @@ function nextStep() {
     $('#step1').addClass('d-none');
     $('#step2').removeClass('d-none');
 }
+function sendNextStep() {
+    $('#send_step1').addClass('d-none');
+    $('#send_step2').removeClass('d-none');
+}

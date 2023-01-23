@@ -97,6 +97,9 @@ main.container-fluid > .row{
     height: 100%;
     height: calc(100% - 64px);
 }
+#page1.container-fluid > .row{
+    height: 100%;
+}
 
 .px-2 {
     padding-left: 2rem !important;
@@ -185,6 +188,23 @@ button {
     height: 48px;
 }
 
+.customInput {
+    width: 100%;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    border-radius: 0.375rem;
+}
+.customInput input{
+    border: none;
+}
+.customInput span{
+    margin: 0 8px;
+}
+
 #page1 p.bottom-text {
     font-size: 16px;
     font-weight: 400;
@@ -200,6 +220,10 @@ button {
     height: 48px;
 }
 
+.topNavbar {
+    height: 64px;
+    margin-top: 24px;
+}
 .topNavbar .nav__link {
     color: #1d1c1c;
 }
@@ -312,16 +336,14 @@ button {
 /* ----------------------------------- end ---------------------------------- */
 
 /* -------------------------------- send page ------------------------------- */
-#request h4.title,
-#recipient h4.title,
-#send h4.title {
+.topNavbar h4.title {
     font-weight: 700;
     font-size: 18px;
     font-family: SpaceGrotesk;
     color: #000000;
 }
 #request .subtitle,
-#recipient .subtitle,
+#send_step2 .subtitle,
 #send .subtitle {
     font-weight: 700;
     font-size: 22px;
@@ -334,16 +356,17 @@ button {
     font-weight: 400;
     color: #979797;
 }
-/* ----------------------------------- end ---------------------------------- */
-
-/* ----------------------------- recipient page ----------------------------- */
-#recipient .price {
+#statement .price,
+#swap .price,
+#send_step2 .price {
     font-weight: 700;
     font-size: 30px;
     font-family: SpaceGrotesk;
     color: #363636;
 }
-#recipient .price span {
+#statement .price span,
+#swap .price span,
+#send_step2 .price span {
     font-weight: 400;
     font-size: 18px;
     font-family: SpaceGrotesk;
@@ -354,6 +377,85 @@ button {
 /* ------------------------------ request page ------------------------------ */
 
 /* ----------------------------------- end ---------------------------------- */
+
+/* -------------------------------- swap page ------------------------------- */
+#swap .swapDetails {
+    font-family: SpaceGrotesk;
+    font-weight: 400;
+    font-size: 20px;
+    color: #7B7B7B;
+}
+/* ----------------------------------- end ---------------------------------- */
+
+/* ----------------------------- statement page ----------------------------- */
+#statement .statementTable {
+    padding-top: 1rem;
+    height: 55%;
+    overflow: hidden;
+}
+#statement .statementTable .items-list {
+    height: 100%;
+}
+#statement .statementTable .list {
+    max-height: calc(100% - 55px);
+    overflow-y: scroll;
+}
+#statement .statementTable .items-list .date {
+    font-family: JetBrain, sans-serif;
+    margin-right: 0.5rem;
+}
+#statement .statementTable .items-list .date span:first-child {
+    color: #363636;
+    font-size: 15px;
+}
+#statement .statementTable .items-list .date span:last-child {
+    color: #363636;
+    font-weight: 700;
+    font-size: 20px;
+}
+#statement .statementTable .items-list .list li .icon {
+    width: 47px;
+    height: 47px;
+    background: #D9D9D9;
+    color: #B0B0B0;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+#statement .statementTable .items-list .list li .description {
+    font-family: JetBrain, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #363636;
+}
+#statement .statementTable .items-list .list li .amount {
+    font-family: JetBrain, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #363636;
+}
+/* ----------------------------------- end ---------------------------------- */
+
+/* -------------------------------- buy page -------------------------------- */
+#buy .buyTo .user .icon {
+    width: 80px;
+    height: 80px;
+    background: #D9D9D9;
+    color: #B0B0B0;
+    border-radius: 50%;
+}
+#buy .buyTo .user span:last-child {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #363636;
+}
+#buy .buyTo .qrcode img {
+    max-width: 70%;
+}
+/* ----------------------------------- end ---------------------------------- */
+
 .nav__list,
 .nav__link {
     display: flex;

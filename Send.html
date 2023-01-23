@@ -55,7 +55,7 @@
     <main class="container-fluid p-0">
         <div class="row m-0">
             <div class="col-12 box-container p-0 py-2-" id="send">
-                <div class="row d-flex justify-content-center m-0">
+                <div class="row d-flex justify-content-center m-0" id="send_step1">
                     <div class="topNavbar d-flex justify-content-between align-items-center px-2">
                         <a href="/Dashboard-home.html" class="nav__link">
                             <i class='bx bx-arrow-back bx-sm nav__icon'></i>
@@ -74,9 +74,42 @@
                             <input type="text" class="form-control" id="currency" placeholder="EPKR">
                         </div>
                     </form>
-                    <div class="qrcode d-flex justify-content-center flex-column align-items-center px-2" onclick="qrcodeClicked()">
+                    <div class="qrcode d-flex justify-content-center flex-column align-items-center px-2"
+                        onclick="qrcodeClicked()">
                         <p class="mb-0 text-center">OR<br>SCAN USER</p>
-                        <img src="./images/qrcode-.png" alt="qrcode"/>
+                        <img src="./images/qrcode-.png" alt="qrcode" />
+                    </div>
+                    <div class="px-2 pb-2">
+                        <button type="submit" class="btn btn-primary mt-2 w-100"
+                            onclick="sendNextStep()">CONFIRM</button>
+                        <button type="button" class="btn btn-secondary mt-2 w-100">CANCEL</button>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center m-0 d-none" id="send_step2">
+                    <div class="topNavbar d-flex justify-content-between align-items-center px-2">
+                        <a href="/Dashboard-home.html" class="nav__link">
+                            <i class='bx bx-arrow-back bx-sm nav__icon'></i>
+                        </a>
+                        <h4 class="title">RECIPIENT DETAILS</h4>
+                        <a href="#home" class="nav__link">
+                            <!-- <i class='bx bx-bell bx-sm nav__icon'></i> -->
+                        </a>
+                    </div>
+                    <div class="lables px-2">
+                        <p class="subtitle mb-2 mt-4 px-2">CHOOSE A HANDLE</p>
+                        <div class="label mb-2">
+                            @Wasim Akram
+                        </div>
+                        <div class="label font-lg">
+                            <span>ePKR</span> 5,000
+                        </div>
+                    </div>
+                    <div class="info d-flex justify-content-between flex-column align-items-start px-2">
+                        <p class="mb-0 text-center w-100">YOU ARE ABOUT TO PAY<br>@Wasim Akram</p>
+                        <div class="text-left">
+                            <p class="mb-0">BALANCE</p>
+                            <p class="price mb-0"><span>ePKR </span>460,24</p>
+                        </div>
                     </div>
                     <div class="px-2 pb-2">
                         <button type="submit" class="btn btn-primary mt-2 w-100">CONFIRM</button>
@@ -89,7 +122,7 @@
 
 
 
-    <!-- <script src="js/jquery-3.6.1.min.js"></script> -->
+    <script src="js/jquery-3.6.1.min.js"></script>
     <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
     <script src="js/custom.js"></script>
 
