@@ -1,0 +1,498 @@
+/*=============== BASE ===============*/
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../fonts/SpaceGrotesk-Light.ttf');
+    src: url('../fonts/SpaceGrotesk-Regular.ttf');
+    src: url('../fonts/SpaceGrotesk-Medium.ttf');
+    src: url('../fonts/SpaceGrotesk-SemiBold.ttf');
+    font-weight: 400;
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: 'JetBrain';
+    src: url('../fonts/JetBrainsMono-Light.ttf');
+    src: url('../fonts/JetBrainsMono-Regular.ttf');
+    src: url('../fonts/JetBrainsMono-Medium.ttf');
+    src: url('../fonts/JetBrainsMono-SemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.ttf');
+    src: url('../fonts/Poppins-Regular.ttf');
+    src: url('../fonts/Poppins-Medium.ttf');
+    src: url('../fonts/Poppins-SemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.ttf');
+    src: url('../fonts/Montserrat-Regular.ttf');
+    src: url('../fonts/Montserrat-Medium.ttf');
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 3rem 0 0 0;
+    margin: 0 0 0 0;
+    font-family: SpaceGrotesk, sans-serif;
+    font-size: .938rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* ----------------------------------- end ---------------------------------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: .4s;
+}
+.nav {
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.container-fluid {
+    background: #EFEFF4;
+    /* height: 100vh; */
+    /* background-size: cover;
+    background-position-x: center;
+    background-color: rgb(241, 241, 241); */
+}
+main.container-fluid > .row{
+    height: 100%;
+    height: calc(100% - 64px);
+}
+
+.px-2 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.py-2 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.label {
+    width: 100%;
+    background: #D6D6D6;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: SpaceGrotesk;
+    text-align: center;
+}
+.label.font-lg {
+    font-weight: 700;
+    font-size: 60px;
+    color: #7B7B7B;
+}
+.label span {
+    font-weight: 400;
+    font-size: 20px;
+}
+.box-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    height: 100%;
+    justify-content: space-between;
+}
+.box-container > .row {
+    height: 100%;
+    /* height: calc(100% - 30px); */
+}
+
+h4.title {
+    padding: 1.25rem 0;
+    font-weight: 400;
+    font-family: JetBrain, sans-serif;
+    color: rgb(153, 153, 153);
+    margin: 0;
+}
+
+#page1 .subtitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#page1 .price-container .currency {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#page1 .price-container .price {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#page1 .price-container p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.qrcode img {
+    max-width: 50%;
+}
+
+.qrcode p {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+}
+
+button {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    background-color: blue;
+    height: 48px;
+}
+
+#page1 p.bottom-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(165, 165, 165);
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.form-group input {
+    height: 48px;
+}
+
+.topNavbar .nav__link {
+    color: #1d1c1c;
+}
+
+/* ----------------------------- dashboard page ----------------------------- */
+#dashboard .username p {
+    margin: 0;
+    color: #1D1C1C;
+    text-align: left;
+}
+
+#dashboard .username p:first-child {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+#dashboard .username p:last-child {
+    font-size: 20px;
+    font-family: SpaceGrotesk;
+}
+
+#dashboard .balance-box>div {
+    background: #919191;
+    border-radius: 20px;
+}
+
+#dashboard .balance-box span:first-child {
+    color: rgba(244, 239, 239, 0.82);
+    font-size: 16px;
+    font-family: SpaceGrotesk;
+}
+
+#dashboard .balance-box span:last-child {
+    color: #fff;
+    font-size: 16px;
+    font-family: SpaceGrotesk;
+}
+
+#dashboard .balance-box p {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-family: SpaceGrotesk;
+}
+
+#dashboard .boxes .box .icon {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background: #B5B5B5;
+    border-radius: 15px;
+}
+
+#dashboard .boxes .box .icon a {
+    color: #fff;
+}
+
+#dashboard .boxes span {
+    font-size: 14px;
+}
+
+#dashboard .items-list {
+    background-color: #fff;
+    border-radius: 1rem 1rem 0 0;
+    padding-top: 1rem;
+    height: 40%;
+}
+
+#dashboard .items-list .dropdown .btn {
+    background-color: transparent;
+}
+
+#dashboard .items-list .list {
+    max-height: 330px;
+    max-height: calc(100% - 55px);
+    overflow-y: scroll;
+}
+#dashboard .items-list .list li .icon {
+    width: 55px;
+    height: 55px;
+    background: #919191;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#dashboard .items-list .list li .description {
+    font-family: Montserrat;
+}
+#dashboard .items-list .list li .description p:first-child{
+    color: #1D1C1C;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+#dashboard .items-list .list li .description p:last-child{
+    margin: 0;
+    color: #676767;
+    font-size: 13px;
+    font-weight: 400;
+}
+#dashboard .items-list .list li .amount{
+    font-family: SpaceGrotesk;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ----------------------------------- end ---------------------------------- */
+
+/* -------------------------------- send page ------------------------------- */
+#request h4.title,
+#recipient h4.title,
+#send h4.title {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: SpaceGrotesk;
+    color: #000000;
+}
+#request .subtitle,
+#recipient .subtitle,
+#send .subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    color: #515151;
+    font-family: SpaceGrotesk;
+    text-align: center;
+}
+#send .qrcode p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #979797;
+}
+/* ----------------------------------- end ---------------------------------- */
+
+/* ----------------------------- recipient page ----------------------------- */
+#recipient .price {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: SpaceGrotesk;
+    color: #363636;
+}
+#recipient .price span {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: SpaceGrotesk;
+    color: #363636;
+}
+/* ----------------------------------- end ---------------------------------- */
+
+/* ------------------------------ request page ------------------------------ */
+
+/* ----------------------------------- end ---------------------------------- */
+.nav__list,
+.nav__link {
+    display: flex;
+}
+
+.nav__link {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    color: hsl(174, 12%, 15%);
+    font-weight: 600;
+}
+
+.nav__list {
+    justify-content: space-around;
+}
+
+.nav__name {
+    font-size: .625rem;
+    /* display: none;*/
+    /* Minimalist design, hidden labels */
+}
+
+.nav__icon {
+    font-size: 1.5rem;
+}
+
+.nav__item.circle__item {
+    background-color: #909090;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item.circle__item .nav__link {
+    color: #fff;
+}
+
+/*Active link*/
+.active-link {
+    position: relative;
+    color: hsl(174, 63%, 40%);
+    transition: .3s;
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+/* Remove if you choose, the minimalist design */
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #EFEFF4;
+        box-shadow: 0 -10px 12px hsla(174, 63%, 15%, 0.15);
+        width: 100%;
+        height: 4rem;
+        padding: 0 1rem;
+        display: grid;
+        align-content: center;
+        /* border-radius: 1rem 1rem 0 0; */
+        transition: .4s;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav__name {
+        display: none;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .nav__list {
+        justify-content: center;
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 7rem 0 2rem;
+    }
+
+    .nav {
+        height: calc(3rem + 1.5rem);
+        /* 4.5rem */
+    }
+
+    .nav__img {
+        display: none;
+    }
+
+    .nav__icon {
+        display: none;
+    }
+
+    .nav__name {
+        font-size: .938rem;
+    }
+
+    .nav__link:hover {
+        color: hsl(174, 63%, 40%);
+        ;
+    }
+
+    /* First design, remove if you choose the minimalist design */
+    .active-link::before {
+        content: '';
+        position: absolute;
+        bottom: -.75rem;
+        width: 4px;
+        height: 4px;
+        background-color: hsl(174, 63%, 40%);
+        border-radius: 50%;
+    }
+
+    /* Minimalist design */
+    /* .active-link::before{
+        bottom: -.75rem;
+    } */
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}

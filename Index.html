@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E wallet</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-12 box-container" id="page1">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12" id="step1">
+                        <h4 class="mb-4 title">TEEKPAY</h4>
+                        <p class="subtitle mb-0">UNBANK YOURSELF</p>
+                        <div class="price-container">
+                            <span class="currency">ePKR</span>
+                            <span class="price">
+                                4,500
+                            </span>
+                            <p class="mb-0">Bonus for Sign Up</p>
+                        </div>
+                        <div class="qrcode p-3 mt-5" onclick="qrcodeClicked()">
+                            <img src="./images/qrcode-.png" alt="qrcode"/>
+                            <p class="mt-2">SCAN OR TAP TO START</p>
+                        </div>
+                        <button type="button" onclick="nextStep()" class="btn btn-primary w-100">REGISTER OR LOGIN</button>
+                        <p class="bottom-text mt-3">
+                            SEND & RECEIVE <br> EPKR FAST
+                        </p>
+                    </div>
+                    <div class="col-12 d-none" id="step2">
+                        <h4 class="mb-4 title">TEEKPAY</h4>
+                        <p class="subtitle mb-5">COMPLETE SIGN-UP <br> @910300123456</p>
+                        <form>
+                            <div class="form-group mb-3">
+                              <!-- <label for="fullname">Full Legal Name</label> -->
+                              <input type="text" class="form-control" id="fullname" aria-describedby="fullnameHelp" placeholder="Full Legal Name (Same As Your ID)">
+                              <!-- <small id="fullnameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            <div class="form-group mb-3">
+                              <!-- <label for="fullname">Full Legal Name</label> -->
+                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email (Optional)">
+                              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-5 w-100">REGISTER NOW</button>
+                          </form>
+                        <p class="bottom-text mt-4">
+                            SEND & RECEIVE <br> EPKR FAST
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
