@@ -70,6 +70,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /* ----------------------------------- end ---------------------------------- */
 .header {
     position: fixed;
@@ -79,6 +80,7 @@ img {
     z-index: 100;
     transition: .4s;
 }
+
 .nav {
     height: 48px;
     display: flex;
@@ -93,12 +95,23 @@ main.container-fluid {
     background-position-x: center;
     background-color: rgb(241, 241, 241); */
 }
-main.container-fluid > .row{
+
+main.container-fluid>.row {
     height: 100%;
     height: calc(100% - 64px);
 }
-#page1.container-fluid > .row{
+
+#page1.container-fluid>.row {
     height: 100%;
+}
+
+.px-1 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.px-1_5 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }
 
 .px-2 {
@@ -110,6 +123,7 @@ main.container-fluid > .row{
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
 }
+
 .label {
     width: 100%;
     background: #D6D6D6;
@@ -119,15 +133,18 @@ main.container-fluid > .row{
     font-family: SpaceGrotesk;
     text-align: center;
 }
+
 .label.font-lg {
     font-weight: 700;
     font-size: 60px;
     color: #7B7B7B;
 }
+
 .label span {
     font-weight: 400;
     font-size: 20px;
 }
+
 .box-container {
     padding: 2em;
     display: flex;
@@ -136,7 +153,8 @@ main.container-fluid > .row{
     height: 100%;
     justify-content: space-between;
 }
-.box-container > .row {
+
+.box-container>.row {
     height: 100%;
     /* height: calc(100% - 30px); */
 }
@@ -198,10 +216,13 @@ button {
     -moz-appearance: none; */
     border-radius: 0.375rem;
 }
-.customInput input{
+
+.customInput input,
+.customInput textarea {
     border: none;
 }
-.customInput span{
+
+.customInput span {
     margin: 0 8px;
 }
 
@@ -209,11 +230,11 @@ button {
     font-size: 16px;
     font-weight: 400;
     color: rgb(165, 165, 165);
-    position: absolute;
+    /* position: absolute;
     bottom: 10%;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 .form-group input {
@@ -224,6 +245,7 @@ button {
     height: 64px;
     margin-top: 24px;
 }
+
 .topNavbar .nav__link {
     color: #1d1c1c;
 }
@@ -302,6 +324,7 @@ button {
     max-height: calc(100% - 55px);
     overflow-y: scroll;
 }
+
 #dashboard .items-list .list li .icon {
     width: 55px;
     height: 55px;
@@ -314,19 +337,22 @@ button {
 #dashboard .items-list .list li .description {
     font-family: Montserrat;
 }
-#dashboard .items-list .list li .description p:first-child{
+
+#dashboard .items-list .list li .description p:first-child {
     color: #1D1C1C;
     font-size: 16px;
     font-weight: 500;
     margin: 0;
 }
-#dashboard .items-list .list li .description p:last-child{
+
+#dashboard .items-list .list li .description p:last-child {
     margin: 0;
     color: #676767;
     font-size: 13px;
     font-weight: 400;
 }
-#dashboard .items-list .list li .amount{
+
+#dashboard .items-list .list li .amount {
     font-family: SpaceGrotesk;
     color: #404040;
     font-size: 14px;
@@ -342,6 +368,7 @@ button {
     font-family: SpaceGrotesk;
     color: #000000;
 }
+
 #request .subtitle,
 #send_step2 .subtitle,
 #send .subtitle {
@@ -351,11 +378,13 @@ button {
     font-family: SpaceGrotesk;
     text-align: center;
 }
+
 #send .qrcode p {
     font-size: 16px;
     font-weight: 400;
     color: #979797;
 }
+
 #statement .price,
 #swap .price,
 #send_step2 .price {
@@ -364,6 +393,7 @@ button {
     font-family: SpaceGrotesk;
     color: #363636;
 }
+
 #statement .price span,
 #swap .price span,
 #send_step2 .price span {
@@ -372,6 +402,7 @@ button {
     font-family: SpaceGrotesk;
     color: #363636;
 }
+
 /* ----------------------------------- end ---------------------------------- */
 
 /* ------------------------------ request page ------------------------------ */
@@ -385,6 +416,7 @@ button {
     font-size: 20px;
     color: #7B7B7B;
 }
+
 /* ----------------------------------- end ---------------------------------- */
 
 /* ----------------------------- statement page ----------------------------- */
@@ -393,26 +425,32 @@ button {
     height: 55%;
     overflow: hidden;
 }
+
 #statement .statementTable .items-list {
     height: 100%;
 }
+
 #statement .statementTable .list {
     max-height: calc(100% - 55px);
     overflow-y: scroll;
 }
+
 #statement .statementTable .items-list .date {
     font-family: JetBrain, sans-serif;
     margin-right: 0.5rem;
 }
+
 #statement .statementTable .items-list .date span:first-child {
     color: #363636;
     font-size: 15px;
 }
+
 #statement .statementTable .items-list .date span:last-child {
     color: #363636;
     font-weight: 700;
     font-size: 20px;
 }
+
 #statement .statementTable .items-list .list li .icon {
     width: 47px;
     height: 47px;
@@ -421,6 +459,7 @@ button {
     border-radius: 50%;
     margin-right: 0.5rem;
 }
+
 #statement .statementTable .items-list .list li .description {
     font-family: JetBrain, sans-serif;
     font-weight: 500;
@@ -429,12 +468,14 @@ button {
     text-transform: uppercase;
     color: #363636;
 }
+
 #statement .statementTable .items-list .list li .amount {
     font-family: JetBrain, sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #363636;
 }
+
 /* ----------------------------------- end ---------------------------------- */
 
 /* -------------------------------- buy page -------------------------------- */
@@ -445,14 +486,143 @@ button {
     color: #B0B0B0;
     border-radius: 50%;
 }
+
 #buy .buyTo .user span:last-child {
     font-weight: 500;
     font-size: 18px;
     text-transform: uppercase;
     color: #363636;
 }
+
 #buy .buyTo .qrcode img {
     max-width: 70%;
+}
+
+/* ----------------------------------- end ---------------------------------- */
+
+/* ----------------------------- admin user page ---------------------------- */
+#admin_users .table {
+    /* padding-top: 1rem; */
+    height: 65%;
+    overflow: hidden;
+    margin: 0;
+}
+
+#admin_users .table .items-list {
+    height: 100%;
+}
+
+#admin_users .table .list {
+    max-height: calc(100% - 15px);
+    overflow-y: scroll;
+}
+
+#admin_users .table .list li {
+    padding: 0;
+}
+
+#admin_users .table .items-list .date {
+    font-family: JetBrain, sans-serif;
+    margin-right: 0.5rem;
+}
+
+#admin_users .table .items-list .date span:first-child {
+    color: #656565;
+    font-size: 12px;
+}
+
+#admin_users .table .items-list .date span:last-child {
+    color: #656565;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#admin_users .table .items-list .list li .icon {
+    width: 40px;
+    height: 40px;
+    background: #D9D9D9;
+    color: #B0B0B0;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+}
+
+#admin_users .table .items-list .list li .description {
+    font-family: JetBrain, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+#admin_users .table .items-list .list li .description p:last-child {
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+#admin_users .table .items-list .list li .amount {
+    font-family: JetBrain, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #363636;
+}
+
+#admin_users .table .item-header {
+    border-bottom: 1px solid #D6D6D6;
+    font-size: 12px;
+}
+
+#admin_users .table .item-header span {
+    padding: 0;
+}
+
+#admin_users .table .item-header>div span:nth-child(1) {
+    min-width: 100px;
+    display: inline-block;
+}
+
+/* #admin_users .table .items-list .list li.item-header span:nth-child(2) {
+    min-width: 100px;
+} */
+#admin_users .table .item-header>span {
+    display: inline-block;
+    min-width: 100px;
+}
+
+/* ----------------------------------- end ---------------------------------- */
+
+/* ------------------------ withdrawn_processing page ----------------------- */
+#withdrawn_processing .info span {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #515151;
+}
+
+/* ----------------------------------- end ---------------------------------- */
+
+/* ---------------------------- admin_notes page ---------------------------- */
+#admin_notes .info span {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #515151;
+}
+#admin_notes .list span:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #515151;
+    font-family: SpaceGrotesk, sans-serif;
+    margin-right: 0.5rem;
+}
+#admin_notes .list span:last-child {
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: SpaceGrotesk, sans-serif;
 }
 /* ----------------------------------- end ---------------------------------- */
 
@@ -591,10 +761,6 @@ button {
 
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {}
 
-}
-
-@media screen and (max-width: 991px) {
-
-}
+@media screen and (max-width: 991px) {}
