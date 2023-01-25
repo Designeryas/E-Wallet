@@ -5,19 +5,22 @@ $(document).ready(function () {
   //     const height_img = $('.man-city-logo img').height();
   //     $('.world-cup-logo img').css({'height': height_img})
   // });
-  $('#send .back').click(function(e) {
+  $('#send #send_step2 .back').click(function(e) {
     e.preventDefault();
-    var url = $(location).attr("href");
-    var isStepTwo = $("#send_step1").has("d-none");
-    if(isStepTwo) {
-        $("#step1").removeClass("d-none");
-        $("#step2").addClass("d-none");
-    } else {
-        parts = url.split("/");
-        last_part = parts[parts.length - 1];
-        url = url.replace(last_part, "Home.html");
-        $(location).attr("href", url);
-    }
+    $("#send_step1").removeClass("d-none");
+    $("#send_step2").addClass("d-none");
+    console.log("clicked")
+    // var url = $(location).attr("href");
+    // var isStepTwo = $("#send_step1").hasClass("d-none");
+    // if(isStepTwo) {
+    //     console.log("in if")
+    // } else {
+    //     console.log("in else")
+    //     parts = url.split("/");
+    //     last_part = parts[parts.length - 1];
+    //     url = url.replace(last_part, "Home.html");
+    //     $(location).attr("href", url);
+    // }
   })
 });
 function qrcodeClicked() {

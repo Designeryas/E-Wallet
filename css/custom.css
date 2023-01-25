@@ -133,6 +133,9 @@ img {
     align-items: center;
 }
 
+.btn {
+    font-weight: 500;
+}
 .btn.btn-warning {
     background: #F99E1D;
     color: #fff;
@@ -546,7 +549,7 @@ max-width: 40%;
 
 /* ----------------------------- statement page ----------------------------- */
 #statement .statementTable {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     height: 55%;
     overflow: hidden;
 }
@@ -577,19 +580,24 @@ max-width: 40%;
 }
 
 #statement .statementTable .items-list .list li .icon {
-    width: 47px;
-    height: 47px;
-    background: #D9D9D9;
-    color: #B0B0B0;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 0.5rem;
+}
+#statement .statementTable .items-list .list li:nth-child(even) .icon {
+    background: #8F67FE;
+    color: #fff;
+}
+#statement .statementTable .items-list .list li:nth-child(odd) .icon {
+    background: #F04A1A;
+    color: #fff;
 }
 
 #statement .statementTable .items-list .list li .description {
     font-family: JetBrain, sans-serif;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #363636;
 }
@@ -597,7 +605,7 @@ max-width: 40%;
 #statement .statementTable .items-list .list li .amount {
     font-family: JetBrain, sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     color: #363636;
 }
 
@@ -607,8 +615,8 @@ max-width: 40%;
 #buy .buyTo .user .icon {
     width: 80px;
     height: 80px;
-    background: #D9D9D9;
-    color: #B0B0B0;
+    background: #F04A1A;
+    color: #fff;
     border-radius: 50%;
 }
 
@@ -665,10 +673,29 @@ max-width: 40%;
 #admin_users .table .items-list .list li .icon {
     width: 40px;
     height: 40px;
-    background: #D9D9D9;
-    color: #B0B0B0;
     border-radius: 50%;
     margin-right: 0.25rem;
+    color: #fff;
+}
+#admin_users .table .items-list .list li:nth-child(1) .icon,
+#admin_users .table .items-list .list li:nth-child(6) .icon {
+    background: #8F67FE;
+}
+#admin_users .table .items-list .list li:nth-child(2) .icon,
+#admin_users .table .items-list .list li:nth-child(7) .icon {
+    background: #00CB00;
+}
+#admin_users .table .items-list .list li:nth-child(3) .icon,
+#admin_users .table .items-list .list li:nth-child(8) .icon {
+    background: #FFB901;
+}
+#admin_users .table .items-list .list li:nth-child(4) .icon,
+#admin_users .table .items-list .list li:nth-child(9) .icon {
+    background: #F04A1A;
+}
+#admin_users .table .items-list .list li:nth-child(5) .icon,
+#admin_users .table .items-list .list li:nth-child(10) .icon {
+    background: #EF3EFF;
 }
 
 #admin_users .table .items-list .list li .description {
@@ -720,7 +747,7 @@ max-width: 40%;
 /* ------------------------ withdrawn_processing page ----------------------- */
 #withdrawn_processing .info span {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #515151;
 }
