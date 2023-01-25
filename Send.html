@@ -57,7 +57,7 @@
             <div class="col-12 box-container p-0 py-2-" id="send">
                 <div class="row d-flex justify-content-center m-0" id="send_step1">
                     <div class="topNavbar d-flex justify-content-between align-items-center px-2">
-                        <a href="/Dashboard-home.html" class="nav__link">
+                        <a href="/Dashboard-home.html" class="nav__link back">
                             <i class='bx bx-arrow-back bx-sm nav__icon'></i>
                         </a>
                         <h4 class="title">SEND</h4>
@@ -65,24 +65,27 @@
                             <!-- <i class='bx bx-bell bx-sm nav__icon'></i> -->
                         </a>
                     </div>
-                    <p class="subtitle mb-2 mt-4 px-2">TYPE THEIR PHONE NUMBER</p>
                     <form class="px-2">
-                        <div class="form-group mb-3">
+                        <p class="subtitle mb-2">TYPE THEIR PHONE NUMBER</p>
+                        <div class="form-group mb-2">
                             <input type="number" class="form-control" id="phone" placeholder="0092">
                         </div>
-                        <div class="form-group mb-3">
-                            <input type="text" class="form-control" id="currency" placeholder="EPKR">
+                        <div class="form-group mb-2">
+                            <input type="text" class="form-control" id="currency" placeholder="Currency">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="amount" placeholder="Amount">
                         </div>
                     </form>
-                    <div class="qrcode d-flex justify-content-center flex-column align-items-center px-2"
+                    <div class="qrcode d-flex justify-content-between align-items-center px-2"
                         onclick="qrcodeClicked()">
-                        <p class="mb-0 text-center">OR<br>SCAN USER</p>
                         <img src="./images/qrcode-.png" alt="qrcode" />
+                        <span>scan to receive <br> or click <br> confirm to send</span>
                     </div>
                     <div class="px-2 pb-2">
                         <button type="submit" class="btn btn-primary mt-2 w-100"
                             onclick="sendNextStep()">CONFIRM</button>
-                        <button type="button" class="btn btn-secondary mt-2 w-100">CANCEL</button>
+                        <button type="button" class="btn btn-warning mt-2 w-100">CANCEL</button>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center m-0 d-none" id="send_step2">
@@ -100,20 +103,22 @@
                         <div class="label mb-2">
                             @Wasim Akram
                         </div>
-                        <div class="label font-lg">
+                        <div class="label font-lg pt-0 pb-0">
                             <span>ePKR</span> 5,000
                         </div>
                     </div>
-                    <div class="info d-flex justify-content-between flex-column align-items-start px-2">
+                    <div class="info d-flex justify-content-between flex-column align-items-start px-2 mt-3">
                         <p class="mb-0 text-center w-100">YOU ARE ABOUT TO PAY<br>@Wasim Akram</p>
                         <div class="text-left">
                             <p class="mb-0">BALANCE</p>
                             <p class="price mb-0"><span>ePKR </span>460,24</p>
                         </div>
                     </div>
+                    <!-- <div class="p-0">
+                    </div> -->
                     <div class="px-2 pb-2">
                         <button type="submit" class="btn btn-primary mt-2 w-100">CONFIRM</button>
-                        <button type="button" class="btn btn-secondary mt-2 w-100">CANCEL</button>
+                        <button type="button" class="btn btn-warning mt-2 w-100">CANCEL</button>
                     </div>
                 </div>
             </div>
