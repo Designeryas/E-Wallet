@@ -194,6 +194,11 @@ main.container-fluid>.row {
     font-size: 50px;
     color: #7B7B7B;
 }
+.font-md {
+    font-weight: 500;
+    font-size: 32px;
+    color: #7B7B7B;
+}
 
 .label span {
     font-weight: 400;
@@ -517,8 +522,17 @@ select.form-select {
     max-width: 50%;
     text-align: center;
 }
-#send form .bxl-whatsapp {
+.bxl-whatsapp {
     color: #25D366;
+}
+#send .btn span.whatsapp {
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 6px;
+}
+#send .btn span.whatsapp .bxl-whatsapp {
+    color: #fff;
 }
 #send .qrcode img {
 max-width: 38%;
