@@ -34,6 +34,10 @@ function sendNextStep() {
   $("#send_step1").addClass("d-none");
   $("#send_step2").removeClass("d-none");
 }
+function receiveNextStep() {
+  $("#receive_step1").addClass("d-none");
+  $("#receive_step2").removeClass("d-none");
+}
 function register() {
   console.log("new url", url);
 }
