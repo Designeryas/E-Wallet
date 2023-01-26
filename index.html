@@ -11,11 +11,11 @@
 
 <body class="text-center">
 
-    <main class="container-fluid" id="page1">
-        <div class="row">
-            <div class="col-12 box-container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12" id="step1">
+    <main class="container-fluid p-0" id="page1">
+        <div class="row m-0">
+            <div class="col-12 box-container p-0">
+                <div class="row d-flex justify-content-center m-0" id="step1">
+                    <div class="d-flex flex-column">
                         <h4 class="mb-4 title">TEEKPAY</h4>
                         <p class="subtitle mb-0">UNBANK YOURSELF</p>
                         <div class="price-container">
@@ -25,32 +25,43 @@
                             </span>
                             <p class="mb-0">Bonus for Sign Up</p>
                         </div>
-                        <div class="qrcode p-3 mt-4" onclick="qrcodeClicked()">
-                            <img src="./images/qrcode-.png" alt="qrcode"/>
-                            <p class="mt-2">SCAN OR TAP TO START</p>
-                        </div>
-                        <button type="button" onclick="nextStep()" class="btn btn-primary w-100">REGISTER OR LOGIN</button>
+                    </div>
+                    <div class="qrcode p-3 mt-4 px-2" onclick="qrcodeClicked()">
+                        <img src="./images/qrcode-.png" alt="qrcode" />
+                        <p class="mt-2">SCAN OR TAP TO START</p>
+                    </div>
+                    <div class="px-2 pb-2 d-flex align-items-center flex-column align-items-center">
+                        <button type="button" onclick="nextStep()" class="btn btn-primary w-100">REGISTER OR
+                            LOGIN</button>
                         <p class="bottom-text mt-3">
                             SEND & RECEIVE <br> EPKR FAST
                         </p>
                     </div>
-                    <div class="col-12 d-none" id="step2">
+                </div>
+                <div class="row d-flex justify-content-center m-0 d-none" id="step2">
+                    <div class="d-flex flex-column">
                         <h4 class="mb-4 title">TEEKPAY</h4>
-                        <p class="subtitle mb-5">COMPLETE SIGN-UP <br> @910300123456</p>
-                        <form id="register_form">
-                            <div class="form-group mb-3">
-                              <!-- <label for="fullname">Full Legal Name</label> -->
-                              <input type="text" class="form-control" id="fullname" aria-describedby="fullnameHelp" placeholder="Full Legal Name (Same As Your ID)">
-                              <!-- <small id="fullnameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                            </div>
-                            <div class="form-group mb-3">
-                              <!-- <label for="fullname">Full Legal Name</label> -->
-                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email (Optional)">
-                              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                            </div>
-                            <!-- <button type="submit" class="btn btn-primary mt-4 w-100">REGISTER NOW</button> -->
-                            <a href="Home.html" class="btn btn-primary mt-4 w-100 d-flex justify-content-center align-items-center" style="height: 48px;">REGISTER NOW</a>
-                          </form>
+                    </div>
+                    <form id="register_form" class="px-2">
+                        <p class="subtitle mb-4">COMPLETE SIGN-UP <br> @910300123456</p>
+                        <div class="form-group mb-3">
+                            <!-- <label for="fullname">Full Legal Name</label> -->
+                            <input type="text" class="form-control" id="fullname" aria-describedby="fullnameHelp"
+                                placeholder="Full Legal Name (Same As Your ID)">
+                            <!-- <small id="fullnameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="form-group mb-3">
+                            <!-- <label for="fullname">Full Legal Name</label> -->
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="Email (Optional)">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary mt-4 w-100">REGISTER NOW</button> -->
+                        <a href="Home.html"
+                            class="btn btn-primary mt-4 w-100 d-flex justify-content-center align-items-center"
+                            style="height: 48px;">REGISTER NOW</a>
+                    </form>
+                    <div class="px-2 pb-2 d-flex align-items-center flex-column align-items-center">
                         <p class="bottom-text mt-4">
                             SEND & RECEIVE <br> EPKR FAST
                         </p>
